@@ -1,0 +1,2 @@
+# appimg
+- paqueteria de appimage
