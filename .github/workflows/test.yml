@@ -1,0 +1,20 @@
+name: Test appimg
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Test appimg script
+      run: |
+        chmod +x appimg.sh
+        ./appimg.sh list
+        echo "Test completed successfully"
