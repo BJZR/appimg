@@ -6,12 +6,14 @@
 <title>appimg · gestor de AppImage</title>
 <style>
 :root {
-  --bg: #fafafa;
-  --fg: #1a1a1a;
-  --muted: #6b6b6b;
-  --accent: #2563eb;
-  --border: #e5e5e5;
-  --code: #f4f4f5;
+  --bg: #0a0e1a;
+  --fg: #e0e4f0;
+  --muted: #8892b0;
+  --accent: #5b8def;
+  --border: #1e2740;
+  --card: #111827;
+  --code: #1a2238;
+  --green: #6ee7b7;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
@@ -42,22 +44,13 @@ code, pre {
 }
 pre { padding: 1rem; overflow-x: auto; }
 code:not(pre code) { padding: 0.15em 0.4em; }
-kbd {
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  background: var(--code);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 0.15em 0.5em;
-  box-shadow: 0 1px 0 var(--border);
-}
 header { margin-bottom: 2.5rem; }
 header p { color: var(--muted); font-size: 1.1rem; margin-top: 0.25rem; }
 .cmd { display: block; margin: 1.5rem 0; }
-.cmd pre { background: var(--fg); color: #c7ff8c; }
+.cmd pre { background: #0d1117; color: var(--green); border: 1px solid var(--border); }
 .features { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1rem 0; }
 .features div {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.75rem 1rem;
