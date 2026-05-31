@@ -7,9 +7,9 @@
 - Instalación de AppImages desde repositorios en línea o archivos locales
 - Soporte para instalación en modo usuario o sistema
 - Registro de aplicaciones instaladas
-- Verificación de integridad de aplicaciones
-- Actualización automática de aplicaciones
-- Integración con el escritorio para lanzadores de aplicaciones
+- Búsqueda automática de aplicaciones en línea
+- Verificación de integridad de las AppImages descargadas
+- Actualizaciones automáticas
 
 ## Instalación
 
@@ -69,8 +69,16 @@ appimg remove nombre_aplicacion
 appimg status nombre_aplicacion
 
 # Listar aplicaciones instaladas
-app42 Listar aplicaciones instaladas
 appimg list
+
+# Buscar aplicaciones
+appimg search término_de_búsqueda
+
+# Ver información de una aplicación
+appimg info nombre_aplicacion
+
+# Verificar actualizaciones para todas las aplicaciones
+appimg autoupdate
 ```
 
 ## Registro de aplicaciones
@@ -79,7 +87,7 @@ Cada AppImage instalada se registra en:
 - Instalación de usuario: `~/.local/share/appimg/registry.db`
 - Instalación de sistema: `/usr/local/share/appimg/registry.db`
 
-El formato del registro es: `nombre|modo|origen|referencia|nombre_visible|descripcion|categorias|icono`
+El formato del registro es: `nombre|modo|origen|referencia|nombre_visible|descripcion|categorias|icono|version|tamaño|fecha_instalacion`
 
 ## Licencia
 

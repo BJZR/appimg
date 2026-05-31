@@ -1,0 +1,24 @@
+{
+  "name": "appimg",
+  "version": "1.1.0",
+  "description": "Gestor de aplicaciones AppImage para Linux",
+  "main": "appimg.sh",
+  "scripts": {
+    "postinstall": "chmod +x appimg.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "appimg": "./appimg.sh"
+  },
+  "keywords": [
+    "appimage",
+    "linux",
+    "package-manager"
+  ],
+  "author": "bjzr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjzr/appimg.git"
+  }
+}
