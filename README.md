@@ -18,7 +18,7 @@ La instalación se puede realizar de dos maneras:
 ### Método 1: Instalación automática
 
 ```bash
-curl -s https://raw.githubusercontent.com/bjzr/appimg/main/install.sh | bash
+bash <(curl -s https://raw.githubusercontent.com/bjzr/appimg/main/scripts/install.sh)
 ```
 
 ### Método 2: Descarga e instalación manual
